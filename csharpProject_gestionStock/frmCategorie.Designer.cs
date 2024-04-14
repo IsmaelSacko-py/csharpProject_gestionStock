@@ -47,6 +47,7 @@
             this.dgCategorie.Name = "dgCategorie";
             this.dgCategorie.Size = new System.Drawing.Size(415, 494);
             this.dgCategorie.TabIndex = 0;
+            this.dgCategorie.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCategorie_CellContentClick);
             // 
             // label1
             // 

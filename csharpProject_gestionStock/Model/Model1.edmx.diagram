@@ -5,7 +5,13 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="b3b234fb056b4c3ab9d29c86d9136904" Name="Diagram1">
-        <EntityTypeShape EntityType="BdKireneModel.Categorie" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BdKireneModel.Categorie" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BdKireneModel.Produit" Width="1.5" PointX="2.25" PointY="0.5" />
+        <EntityTypeShape EntityType="BdKireneModel.Approvisionnement" Width="1.5" PointX="5.75" PointY="0.5" />
+        <EntityTypeShape EntityType="BdKireneModel.Profil" Width="1.5" PointX="7.5" PointY="0.5" />
+        <EntityTypeShape EntityType="BdKireneModel.Utilisateur" Width="1.5" PointX="9.25" PointY="0.5" />
+        <EntityTypeShape EntityType="BdKireneModel.Facture" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="BdKireneModel.VRechercheProduit" Width="1.5" PointX="4" PointY="0.5" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

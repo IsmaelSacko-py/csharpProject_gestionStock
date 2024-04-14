@@ -10,5 +10,84 @@
   </EntityType>
   <EntityContainer Name="BdKireneEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categorie" EntityType="Self.Categorie" />
+    <EntitySet Name="Produit" EntityType="BdKireneModel.Produit" />
+    <EntitySet Name="Approvisionnement" EntityType="BdKireneModel.Approvisionnement" />
+    <EntitySet Name="Profil" EntityType="BdKireneModel.Profil" />
+    <EntitySet Name="Utilisateur" EntityType="BdKireneModel.Utilisateur" />
+    <EntitySet Name="Facture" EntityType="BdKireneModel.Facture" />
+    <EntitySet Name="VRechercheProduit" EntityType="BdKireneModel.VRechercheProduit" />
   </EntityContainer>
+  <EntityType Name="Produit">
+    <Key>
+      <PropertyRef Name="idProduit" />
+    </Key>
+    <Property Name="idProduit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="DesignationProduit" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PrixUnitaire" Type="Double" />
+    <Property Name="QuantiteMinimale" Type="Int32" />
+    <Property Name="QuantiteMaximale" Type="Int32" />
+    <Property Name="CodeCategorie" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="PrixAchat" Type="Double" />
+  </EntityType>
+  <EntityType Name="Approvisionnement">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="QuantiteAppro" Type="Int32" />
+    <Property Name="QuantiteRestante" Type="Int32" />
+    <Property Name="DatePeremption" Type="DateTime" Precision="3" />
+    <Property Name="DateAppro" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Profil">
+    <Key>
+      <PropertyRef Name="idProfil" />
+    </Key>
+    <Property Name="idProfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeProfil" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LibelleProfil" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="idUtilisateur" />
+    </Key>
+    <Property Name="idUtilisateur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdentifiantUtilisateur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MotDePasse" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CodeProfil" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PremiereConnexion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Facture">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="NomClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PrenomClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TelephoneClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quantite" Type="Int32" />
+    <Property Name="Prix" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+    <Property Name="IdentifiantUtilisateur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dateVente" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="VRechercheProduit">
+    <Key>
+      <PropertyRef Name="idProduit" />
+    </Key>
+    <Property Name="CodeCategorie" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+    <Property Name="LibelleCategorie" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="DesignationProduit" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="PrixUnitaire" Type="Double" />
+    <Property Name="QuantiteMinimale" Type="Int32" />
+    <Property Name="QuantiteMaximale" Type="Int32" />
+    <Property Name="idProduit" Type="Int32" Nullable="false" />
+  </EntityType>
 </Schema>

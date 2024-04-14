@@ -1,20 +1,115 @@
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.AssemblyReference.cache
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Form1.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmApprovisionnement.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmBleu.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmCategorie.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmChangePassword.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmCodeValidation.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmInfoUtilisateur.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmLayout.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmPrintFacture.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmPrintListeProduit.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmProduit.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmSearchProduit.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmUtilisateur.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmVente.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmVert.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Properties.Resources.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Approvisionner.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_BilanVente.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Categorie.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_changePassword.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_codeValidation.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_InfoUtilisateur.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_PrintFacture.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Produit.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Recherche.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Vendeur.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Vendre.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.GenerateResource.cache
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.CoreCompileInputs.cache
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.exe.config
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.exe
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.pdb
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.AssemblyReference.cache
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Form1.resources
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Properties.Resources.resources
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.GenerateResource.cache
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.CoreCompileInputs.cache
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.exe
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.pdb
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmLayout.resources
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmBleu.resources
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmVert.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.dll
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\Guna.UI2.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\stdole.dll
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.xml
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\fr\EntityFramework.resources.dll
-C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmCategorie.resources
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
 C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.CopyComplete
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.exe
+C:\Users\Core\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.pdb
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.exe.config
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.exe
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\csharpProject_gestionStock.pdb
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\Guna.UI2.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.pdb
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.xml
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Form1.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmApprovisionnement.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmBleu.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmCategorie.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmChangePassword.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmCodeValidation.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmInfoUtilisateur.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmLayout.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmPrintFacture.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmPrintListeProduit.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmProduit.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmSearchProduit.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmUtilisateur.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmVente.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.frmVert.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.Properties.Resources.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Approvisionner.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_BilanGeneral.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_BilanProduit.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_BilanVenteGen.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_BilanVente.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Categorie.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_changePassword.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_codeValidation.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_InfoUtilisateur.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_PrintFacture.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Produit.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Recherche.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Vendeur.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.UC_Vendre.resources
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpPr.04D8B4C3.Up2Date
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.exe
+C:\Users\DELL\Desktop\Mes donnees\Documents\COURS DE PYTHON\Mes Projets 2.0\csharpProject_gestionStock\csharpProject_gestionStock\obj\Debug\csharpProject_gestionStock.pdb

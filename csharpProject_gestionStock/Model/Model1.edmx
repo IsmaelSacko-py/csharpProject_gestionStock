@@ -4,7 +4,18 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BdKireneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BdKireneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Approvisionnement">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodeProduit" Type="nvarchar" MaxLength="5" />
+          <Property Name="QuantiteAppro" Type="int" />
+          <Property Name="QuantiteRestante" Type="int" />
+          <Property Name="DatePeremption" Type="datetime" />
+          <Property Name="DateAppro" Type="nchar" MaxLength="10" />
+        </EntityType>
         <EntityType Name="Categorie">
           <Key>
             <PropertyRef Name="IdCategorie" />
@@ -13,11 +24,91 @@
           <Property Name="CodeCategorie" Type="nchar" MaxLength="4" />
           <Property Name="LibelleCategorie" Type="nchar" MaxLength="100" />
         </EntityType>
+        <EntityType Name="Facture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodeProduit" Type="nvarchar" MaxLength="5" />
+          <Property Name="NomClient" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrenomClient" Type="nvarchar" MaxLength="50" />
+          <Property Name="TelephoneClient" Type="nvarchar" MaxLength="50" />
+          <Property Name="Quantite" Type="int" />
+          <Property Name="Prix" Type="int" />
+          <Property Name="Total" Type="int" />
+          <Property Name="IdentifiantUtilisateur" Type="nvarchar" MaxLength="50" />
+          <Property Name="dateVente" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Produit">
+          <Key>
+            <PropertyRef Name="idProduit" />
+          </Key>
+          <Property Name="idProduit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodeProduit" Type="nvarchar" MaxLength="5" />
+          <Property Name="DesignationProduit" Type="nvarchar" MaxLength="200" />
+          <Property Name="PrixUnitaire" Type="float" />
+          <Property Name="QuantiteMinimale" Type="int" />
+          <Property Name="QuantiteMaximale" Type="int" />
+          <Property Name="CodeCategorie" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="PrixAchat" Type="float" />
+        </EntityType>
+        <EntityType Name="Profil">
+          <Key>
+            <PropertyRef Name="idProfil" />
+          </Key>
+          <Property Name="idProfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodeProfil" Type="nvarchar" MaxLength="20" />
+          <Property Name="LibelleProfil" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Utilisateur">
+          <Key>
+            <PropertyRef Name="idUtilisateur" />
+          </Key>
+          <Property Name="idUtilisateur" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdentifiantUtilisateur" Type="nvarchar" MaxLength="50" />
+          <Property Name="MotDePasse" Type="nvarchar" MaxLength="250" />
+          <Property Name="CodeProfil" Type="nvarchar" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Nom" Type="nvarchar" MaxLength="50" />
+          <Property Name="Prenom" Type="nvarchar" MaxLength="50" />
+          <Property Name="PremiereConnexion" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'BdKireneEntities.dbo.VRechercheProduit' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+        <EntityType Name="VRechercheProduit">
+          <Key>
+            <PropertyRef Name="idProduit" />
+          </Key>
+          <Property Name="CodeCategorie" Type="nchar" MaxLength="4" />
+          <Property Name="LibelleCategorie" Type="nchar" MaxLength="100" />
+          <Property Name="DesignationProduit" Type="nvarchar" MaxLength="200" />
+          <Property Name="CodeProduit" Type="nvarchar" MaxLength="5" />
+          <Property Name="PrixUnitaire" Type="float" />
+          <Property Name="QuantiteMinimale" Type="int" />
+          <Property Name="QuantiteMaximale" Type="int" />
+          <Property Name="idProduit" Type="int" Nullable="false" />
+        </EntityType>
         <EntityContainer Name="BdKireneModelStoreContainer">
+          <EntitySet Name="Approvisionnement" EntityType="Self.Approvisionnement" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Categorie" EntityType="Self.Categorie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Facture" EntityType="Self.Facture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Produit" EntityType="Self.Produit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Profil" EntityType="Self.Profil" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Utilisateur" EntityType="Self.Utilisateur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VRechercheProduit" EntityType="Self.VRechercheProduit" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [VRechercheProduit].[CodeCategorie] AS [CodeCategorie], 
+    [VRechercheProduit].[LibelleCategorie] AS [LibelleCategorie], 
+    [VRechercheProduit].[DesignationProduit] AS [DesignationProduit], 
+    [VRechercheProduit].[CodeProduit] AS [CodeProduit], 
+    [VRechercheProduit].[PrixUnitaire] AS [PrixUnitaire], 
+    [VRechercheProduit].[QuantiteMinimale] AS [QuantiteMinimale], 
+    [VRechercheProduit].[QuantiteMaximale] AS [QuantiteMaximale], 
+    [VRechercheProduit].[idProduit] AS [idProduit]
+    FROM [dbo].[VRechercheProduit] AS [VRechercheProduit]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BdKireneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -31,25 +122,182 @@
         </EntityType>
         <EntityContainer Name="BdKireneEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categorie" EntityType="Self.Categorie" />
+          <EntitySet Name="Produit" EntityType="BdKireneModel.Produit" />
+          <EntitySet Name="Approvisionnement" EntityType="BdKireneModel.Approvisionnement" />
+          <EntitySet Name="Profil" EntityType="BdKireneModel.Profil" />
+          <EntitySet Name="Utilisateur" EntityType="BdKireneModel.Utilisateur" />
+          <EntitySet Name="Facture" EntityType="BdKireneModel.Facture" />
+          <EntitySet Name="VRechercheProduit" EntityType="BdKireneModel.VRechercheProduit" />
         </EntityContainer>
+        <EntityType Name="Produit">
+          <Key>
+            <PropertyRef Name="idProduit" />
+          </Key>
+          <Property Name="idProduit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DesignationProduit" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="PrixUnitaire" Type="Double" />
+          <Property Name="QuantiteMinimale" Type="Int32" />
+          <Property Name="QuantiteMaximale" Type="Int32" />
+          <Property Name="CodeCategorie" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PrixAchat" Type="Double" />
+        </EntityType>
+        <EntityType Name="Approvisionnement">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="QuantiteAppro" Type="Int32" />
+          <Property Name="QuantiteRestante" Type="Int32" />
+          <Property Name="DatePeremption" Type="DateTime" Precision="3" />
+          <Property Name="DateAppro" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Profil">
+          <Key>
+            <PropertyRef Name="idProfil" />
+          </Key>
+          <Property Name="idProfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodeProfil" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="LibelleProfil" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Utilisateur">
+          <Key>
+            <PropertyRef Name="idUtilisateur" />
+          </Key>
+          <Property Name="idUtilisateur" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdentifiantUtilisateur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MotDePasse" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CodeProfil" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PremiereConnexion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Facture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="NomClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrenomClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TelephoneClient" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Quantite" Type="Int32" />
+          <Property Name="Prix" Type="Int32" />
+          <Property Name="Total" Type="Int32" />
+          <Property Name="IdentifiantUtilisateur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dateVente" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="VRechercheProduit">
+          <Key>
+            <PropertyRef Name="idProduit" />
+          </Key>
+          <Property Name="CodeCategorie" Type="String" MaxLength="4" FixedLength="true" Unicode="true" />
+          <Property Name="LibelleCategorie" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="DesignationProduit" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CodeProduit" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PrixUnitaire" Type="Double" />
+          <Property Name="QuantiteMinimale" Type="Int32" />
+          <Property Name="QuantiteMaximale" Type="Int32" />
+          <Property Name="idProduit" Type="Int32" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="BdKireneModelStoreContainer" CdmEntityContainer="BdKireneEntities">
-          <EntitySetMapping Name="Categorie">
-            <EntityTypeMapping TypeName="BdKireneModel.Categorie">
-              <MappingFragment StoreEntitySet="Categorie">
-                <ScalarProperty Name="IdCategorie" ColumnName="IdCategorie" />
-                <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BdKireneModelStoreContainer" CdmEntityContainer="BdKireneEntities">
+    <EntitySetMapping Name="Categorie">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Categorie)">
+        <MappingFragment StoreEntitySet="Categorie">
+          <ScalarProperty Name="IdCategorie" ColumnName="IdCategorie" />
+          <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
+          <ScalarProperty Name="LibelleCategorie" ColumnName="LibelleCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produit">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Produit)">
+        <MappingFragment StoreEntitySet="Produit">
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+                <ScalarProperty Name="idProduit" ColumnName="idProduit" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="DesignationProduit" ColumnName="DesignationProduit" />
+          <ScalarProperty Name="PrixUnitaire" ColumnName="PrixUnitaire" />
+          <ScalarProperty Name="QuantiteMinimale" ColumnName="QuantiteMinimale" />
+          <ScalarProperty Name="QuantiteMaximale" ColumnName="QuantiteMaximale" />
+          <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Approvisionnement">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Approvisionnement)">
+        <MappingFragment StoreEntitySet="Approvisionnement">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="QuantiteAppro" ColumnName="QuantiteAppro" />
+          <ScalarProperty Name="QuantiteRestante" ColumnName="QuantiteRestante" />
+          <ScalarProperty Name="DatePeremption" ColumnName="DatePeremption" />
+          <ScalarProperty Name="DateAppro" ColumnName="DateAppro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profil">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Profil)">
+        <MappingFragment StoreEntitySet="Profil">
+          <ScalarProperty Name="idProfil" ColumnName="idProfil" />
+          <ScalarProperty Name="CodeProfil" ColumnName="CodeProfil" />
+          <ScalarProperty Name="LibelleProfil" ColumnName="LibelleProfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateur">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Utilisateur)">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="PremiereConnexion" ColumnName="PremiereConnexion" />
+                <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="IdentifiantUtilisateur" ColumnName="IdentifiantUtilisateur" />
+          <ScalarProperty Name="MotDePasse" ColumnName="MotDePasse" />
+          <ScalarProperty Name="CodeProfil" ColumnName="CodeProfil" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facture">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Facture)">
+        <MappingFragment StoreEntitySet="Facture">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="NomClient" ColumnName="NomClient" />
+          <ScalarProperty Name="PrenomClient" ColumnName="PrenomClient" />
+          <ScalarProperty Name="TelephoneClient" ColumnName="TelephoneClient" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IdentifiantUtilisateur" ColumnName="IdentifiantUtilisateur" />
+          <ScalarProperty Name="dateVente" ColumnName="dateVente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+          <EntitySetMapping Name="VRechercheProduit">
+            <EntityTypeMapping TypeName="BdKireneModel.VRechercheProduit">
+              <MappingFragment StoreEntitySet="VRechercheProduit">
+                <ScalarProperty Name="idProduit" ColumnName="idProduit" />
+                <ScalarProperty Name="QuantiteMaximale" ColumnName="QuantiteMaximale" />
+                <ScalarProperty Name="QuantiteMinimale" ColumnName="QuantiteMinimale" />
+                <ScalarProperty Name="PrixUnitaire" ColumnName="PrixUnitaire" />
+                <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+                <ScalarProperty Name="DesignationProduit" ColumnName="DesignationProduit" />
                 <ScalarProperty Name="LibelleCategorie" ColumnName="LibelleCategorie" />
+                <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -63,7 +311,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
       </DesignerInfoPropertySet>
     </Options>

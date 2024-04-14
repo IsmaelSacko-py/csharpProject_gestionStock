@@ -2,11 +2,90 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BdKireneModelStoreContainer" CdmEntityContainer="BdKireneEntities">
     <EntitySetMapping Name="Categorie">
-      <EntityTypeMapping TypeName="BdKireneModel.Categorie">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Categorie)">
         <MappingFragment StoreEntitySet="Categorie">
           <ScalarProperty Name="IdCategorie" ColumnName="IdCategorie" />
           <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
           <ScalarProperty Name="LibelleCategorie" ColumnName="LibelleCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produit">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Produit)">
+        <MappingFragment StoreEntitySet="Produit">
+          <ScalarProperty Name="PrixAchat" ColumnName="PrixAchat" />
+          <ScalarProperty Name="idProduit" ColumnName="idProduit" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="DesignationProduit" ColumnName="DesignationProduit" />
+          <ScalarProperty Name="PrixUnitaire" ColumnName="PrixUnitaire" />
+          <ScalarProperty Name="QuantiteMinimale" ColumnName="QuantiteMinimale" />
+          <ScalarProperty Name="QuantiteMaximale" ColumnName="QuantiteMaximale" />
+          <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Approvisionnement">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Approvisionnement)">
+        <MappingFragment StoreEntitySet="Approvisionnement">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="QuantiteAppro" ColumnName="QuantiteAppro" />
+          <ScalarProperty Name="QuantiteRestante" ColumnName="QuantiteRestante" />
+          <ScalarProperty Name="DatePeremption" ColumnName="DatePeremption" />
+          <ScalarProperty Name="DateAppro" ColumnName="DateAppro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profil">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Profil)">
+        <MappingFragment StoreEntitySet="Profil">
+          <ScalarProperty Name="idProfil" ColumnName="idProfil" />
+          <ScalarProperty Name="CodeProfil" ColumnName="CodeProfil" />
+          <ScalarProperty Name="LibelleProfil" ColumnName="LibelleProfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateur">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Utilisateur)">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="PremiereConnexion" ColumnName="PremiereConnexion" />
+          <ScalarProperty Name="idUtilisateur" ColumnName="idUtilisateur" />
+          <ScalarProperty Name="IdentifiantUtilisateur" ColumnName="IdentifiantUtilisateur" />
+          <ScalarProperty Name="MotDePasse" ColumnName="MotDePasse" />
+          <ScalarProperty Name="CodeProfil" ColumnName="CodeProfil" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facture">
+      <EntityTypeMapping TypeName="IsTypeOf(BdKireneModel.Facture)">
+        <MappingFragment StoreEntitySet="Facture">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="NomClient" ColumnName="NomClient" />
+          <ScalarProperty Name="PrenomClient" ColumnName="PrenomClient" />
+          <ScalarProperty Name="TelephoneClient" ColumnName="TelephoneClient" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="IdentifiantUtilisateur" ColumnName="IdentifiantUtilisateur" />
+          <ScalarProperty Name="dateVente" ColumnName="dateVente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VRechercheProduit">
+      <EntityTypeMapping TypeName="BdKireneModel.VRechercheProduit">
+        <MappingFragment StoreEntitySet="VRechercheProduit">
+          <ScalarProperty Name="idProduit" ColumnName="idProduit" />
+          <ScalarProperty Name="QuantiteMaximale" ColumnName="QuantiteMaximale" />
+          <ScalarProperty Name="QuantiteMinimale" ColumnName="QuantiteMinimale" />
+          <ScalarProperty Name="PrixUnitaire" ColumnName="PrixUnitaire" />
+          <ScalarProperty Name="CodeProduit" ColumnName="CodeProduit" />
+          <ScalarProperty Name="DesignationProduit" ColumnName="DesignationProduit" />
+          <ScalarProperty Name="LibelleCategorie" ColumnName="LibelleCategorie" />
+          <ScalarProperty Name="CodeCategorie" ColumnName="CodeCategorie" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

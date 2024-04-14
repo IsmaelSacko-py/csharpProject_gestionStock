@@ -72,5 +72,10 @@ namespace csharpProject_gestionStock
 
             resetForm();
         }
+
+        private void dgCategorie_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -26,5 +26,11 @@ namespace csharpProject_gestionStock.Model
         }
     
         public virtual DbSet<Categorie> Categorie { get; set; }
+        public virtual DbSet<Produit> Produit { get; set; }
+        public virtual DbSet<Approvisionnement> Approvisionnement { get; set; }
+        public virtual DbSet<Profil> Profil { get; set; }
+        public virtual DbSet<Utilisateur> Utilisateur { get; set; }
+        public virtual DbSet<Facture> Facture { get; set; }
+        public virtual DbSet<VRechercheProduit> VRechercheProduit { get; set; }
     }
 }
