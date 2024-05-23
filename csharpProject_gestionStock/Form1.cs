@@ -22,11 +22,13 @@ namespace csharpProject_gestionStock
 
         
         BdKireneEntities db = new BdKireneEntities();
-        public static string IdentifiantUtilisateur;
+        bool hide = true;
+        //public static string IdentifiantUtilisateur;
 
         public Form1()
         {
             InitializeComponent();
+            txtMotDePasse.UseSystemPasswordChar = true;
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -51,12 +53,12 @@ namespace csharpProject_gestionStock
                     if (User.PremiereConnexion)
                     {
                         frmChangePassword form = new frmChangePassword();
-                        frmLayout layout = new frmLayout();
+                        //frmLayout layout = new frmLayout();
                         //layout.MdiParent = this;
-                        IdentifiantUtilisateur = User.IdentifiantUtilisateur;
-                        layout.profil = User.CodeProfil;
-                        form.id = User.idUtilisateur;
-                        form.UserEmail = User.Email;
+                        Session.Identifiant = User.IdentifiantUtilisateur;
+                        Session.Profil = User.CodeProfil;
+                        Session.Id = User.idUtilisateur;
+                        Session.Email = User.Email;
                         form.Show();
                         this.Hide();
                     }
@@ -68,10 +70,9 @@ namespace csharpProject_gestionStock
                             if (Crypts.VerifyMd5Hash(md5Hash, txtMotDePasse.Text, hash))
                             {
                                 frmLayout layout = new frmLayout();
-                                IdentifiantUtilisateur = User.IdentifiantUtilisateur;
-                                //layout.MdiParent = this;
-                                layout.profil = User.CodeProfil;
-                                layout.id = User.idUtilisateur;
+                                Session.Identifiant = User.IdentifiantUtilisateur;
+                                Session.Profil = User.CodeProfil;
+                                Session.Id = User.idUtilisateur;
                                 layout.Show();
                                 this.Hide();
                             }
@@ -128,6 +129,7 @@ namespace csharpProject_gestionStock
         private void Form1_Load(object sender, EventArgs e)
         {
 
+
         }
 
         private void lkMotDePasseOublie_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -156,12 +158,7 @@ namespace csharpProject_gestionStock
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmVente form = new frmVente();
-            form.Show();
 
-        }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
@@ -171,12 +168,7 @@ namespace csharpProject_gestionStock
 
         }
 
-        private void btnTest_Click_1(object sender, EventArgs e)
-        {
-            frmUtilisateur form = new frmUtilisateur();
-            form.Show();
-            
-        }
+
 
         private void btnTest_Click_2(object sender, EventArgs e)
         {
@@ -185,12 +177,35 @@ namespace csharpProject_gestionStock
         private void btnTest_Click_3(object sender, EventArgs e)
         {
             frmLayout layout = new frmLayout();
-            IdentifiantUtilisateur = "User.IdentifiantUtilisateur";
-            //layout.MdiParent = this;
-            layout.profil =" GEST";
-            layout.id = 2;
+            Session.Identifiant = "Ismael";
+            Session.Profil = "GEST";
+            Session.Id = 1;
             layout.Show();
             this.Hide();
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMotDePasse_IconRightClick(object sender, EventArgs e)
+        {
+            //txtMotDePasse.IconRight = 
+            if (hide)
+            {
+                txtMotDePasse.IconRight = Properties.Resources.view;
+                txtMotDePasse.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtMotDePasse.IconRight = Properties.Resources.hide;
+                txtMotDePasse.UseSystemPasswordChar = true;
+            }
+
+            hide = !hide;
+            //txtMotDePasse.IconRightCursor = Cursors.Hand;
+        }
+
     }
 }

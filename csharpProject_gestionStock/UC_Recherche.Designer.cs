@@ -58,6 +58,7 @@
             // 
             // txtProduit
             // 
+            this.txtProduit.BorderRadius = 5;
             this.txtProduit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtProduit.DefaultText = "";
             this.txtProduit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -68,6 +69,7 @@
             this.txtProduit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtProduit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtProduit.Location = new System.Drawing.Point(171, 74);
+            this.txtProduit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtProduit.Name = "txtProduit";
             this.txtProduit.PasswordChar = '\0';
             this.txtProduit.PlaceholderText = "";
@@ -77,6 +79,7 @@
             // 
             // txtPrixUnitaire
             // 
+            this.txtPrixUnitaire.BorderRadius = 5;
             this.txtPrixUnitaire.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPrixUnitaire.DefaultText = "";
             this.txtPrixUnitaire.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -87,6 +90,7 @@
             this.txtPrixUnitaire.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPrixUnitaire.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrixUnitaire.Location = new System.Drawing.Point(419, 74);
+            this.txtPrixUnitaire.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPrixUnitaire.Name = "txtPrixUnitaire";
             this.txtPrixUnitaire.PasswordChar = '\0';
             this.txtPrixUnitaire.PlaceholderText = "";
@@ -99,7 +103,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(171, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 18);
+            this.label1.Size = new System.Drawing.Size(90, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Produit";
             // 
@@ -108,7 +112,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(416, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
+            this.label2.Size = new System.Drawing.Size(139, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Prix unitaire";
             // 
@@ -117,7 +121,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(664, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.Size = new System.Drawing.Size(119, 29);
             this.label3.TabIndex = 5;
             this.label3.Text = "Categorie";
             // 
@@ -148,6 +152,7 @@
             this.dgSearchProduit.Location = new System.Drawing.Point(89, 188);
             this.dgSearchProduit.Name = "dgSearchProduit";
             this.dgSearchProduit.RowHeadersVisible = false;
+            this.dgSearchProduit.RowHeadersWidth = 62;
             this.dgSearchProduit.Size = new System.Drawing.Size(891, 407);
             this.dgSearchProduit.TabIndex = 6;
             this.dgSearchProduit.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -183,6 +188,7 @@
             this.btnRechercher.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnRechercher.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRechercher.ForeColor = System.Drawing.Color.White;
+            this.btnRechercher.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(98)))), ((int)(((byte)(174)))));
             this.btnRechercher.Location = new System.Drawing.Point(879, 140);
             this.btnRechercher.Name = "btnRechercher";
             this.btnRechercher.Size = new System.Drawing.Size(101, 32);
@@ -195,12 +201,12 @@
             this.cbbCategorie.FormattingEnabled = true;
             this.cbbCategorie.Location = new System.Drawing.Point(667, 74);
             this.cbbCategorie.Name = "cbbCategorie";
-            this.cbbCategorie.Size = new System.Drawing.Size(212, 26);
+            this.cbbCategorie.Size = new System.Drawing.Size(212, 37);
             this.cbbCategorie.TabIndex = 8;
             // 
             // UC_Recherche
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.cbbCategorie);

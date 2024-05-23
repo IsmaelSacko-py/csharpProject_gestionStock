@@ -13,5 +13,6 @@ namespace csharpProject_gestionStock.Model
         public int? Stock { get; set; }
         public Nullable<double> Ventes { get; set; }
         public int? Montant { get; set; }
+        public double? Chiffre_Affaire { get; set; }
     }
 }

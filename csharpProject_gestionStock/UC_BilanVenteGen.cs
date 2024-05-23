@@ -1,4 +1,6 @@
-﻿using System;
+﻿using csharpProject_gestionStock.Model;
+using csharpProject_gestionStock.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 using System.Xml.Linq;
 
@@ -13,6 +16,7 @@ namespace csharpProject_gestionStock
 {
     public partial class UC_BilanVenteGen : UserControl
     {
+        public string profil;
         public UC_BilanVenteGen()
         {
             InitializeComponent();
@@ -28,8 +32,26 @@ namespace csharpProject_gestionStock
 
         private void UC_BilanVenteGen_Load(object sender, EventArgs e)
         {
-            UC_BilanGeneral uc = new UC_BilanGeneral();
-            AddUserControl2(uc);
+            
+            if(Session.Profil != "GEST")
+            {
+                UC_BilanVente uc = new UC_BilanVente();
+                AddUserControl2(uc);
+
+                plNavBar.Size = new System.Drawing.Size(500, 45);
+                btnBilanGeneral.Visible = false;
+                btnProduits.Location = btnVendeurs.Location;
+                btnVendeurs.Location = btnBilanGeneral.Location;
+                btnVendeurs.Text = "VENTES";
+                btnVendeurs.Checked = true;
+            }
+            else
+            {
+                UC_BilanGeneral uc = new UC_BilanGeneral();
+                AddUserControl2(uc);
+            }
+            
+
         }
 
 

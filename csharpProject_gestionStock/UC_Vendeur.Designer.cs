@@ -64,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.Size = new System.Drawing.Size(116, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Identifiant";
             // 
@@ -80,6 +80,7 @@
             this.txtIdentifiant.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtIdentifiant.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIdentifiant.Location = new System.Drawing.Point(21, 141);
+            this.txtIdentifiant.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtIdentifiant.Name = "txtIdentifiant";
             this.txtIdentifiant.PasswordChar = '\0';
             this.txtIdentifiant.PlaceholderText = "";
@@ -92,7 +93,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(18, 342);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 18);
+            this.label2.Size = new System.Drawing.Size(69, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Profil";
             // 
@@ -106,6 +107,7 @@
             this.btnAjouer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnAjouer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAjouer.ForeColor = System.Drawing.Color.White;
+            this.btnAjouer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(98)))), ((int)(((byte)(174)))));
             this.btnAjouer.Location = new System.Drawing.Point(21, 441);
             this.btnAjouer.Name = "btnAjouer";
             this.btnAjouer.Size = new System.Drawing.Size(116, 33);
@@ -120,9 +122,10 @@
             this.btnStatus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.btnStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnStatus.ForeColor = System.Drawing.Color.White;
+            this.btnStatus.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(172)))), ((int)(((byte)(13)))));
             this.btnStatus.Location = new System.Drawing.Point(199, 441);
             this.btnStatus.Name = "btnStatus";
             this.btnStatus.Size = new System.Drawing.Size(116, 33);
@@ -134,7 +137,7 @@
             this.cbbProfil.FormattingEnabled = true;
             this.cbbProfil.Location = new System.Drawing.Point(21, 363);
             this.cbbProfil.Name = "cbbProfil";
-            this.cbbProfil.Size = new System.Drawing.Size(294, 26);
+            this.cbbProfil.Size = new System.Drawing.Size(294, 37);
             this.cbbProfil.TabIndex = 8;
             // 
             // dgVendeur
@@ -167,6 +170,7 @@
             this.dgVendeur.Name = "dgVendeur";
             this.dgVendeur.ReadOnly = true;
             this.dgVendeur.RowHeadersVisible = false;
+            this.dgVendeur.RowHeadersWidth = 62;
             this.dgVendeur.Size = new System.Drawing.Size(698, 426);
             this.dgVendeur.TabIndex = 9;
             this.dgVendeur.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -203,6 +207,7 @@
             this.txtNom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNom.Location = new System.Drawing.Point(21, 215);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNom.Name = "txtNom";
             this.txtNom.PasswordChar = '\0';
             this.txtNom.PlaceholderText = "";
@@ -215,7 +220,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(18, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 18);
+            this.label3.Size = new System.Drawing.Size(65, 29);
             this.label3.TabIndex = 10;
             this.label3.Text = "Nom";
             // 
@@ -231,6 +236,7 @@
             this.txtPrenom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPrenom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPrenom.Location = new System.Drawing.Point(21, 289);
+            this.txtPrenom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPrenom.Name = "txtPrenom";
             this.txtPrenom.PasswordChar = '\0';
             this.txtPrenom.PlaceholderText = "";
@@ -243,13 +249,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(18, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 18);
+            this.label4.Size = new System.Drawing.Size(98, 29);
             this.label4.TabIndex = 12;
             this.label4.Text = "Prenom";
             // 
             // UC_Vendeur
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.txtPrenom);

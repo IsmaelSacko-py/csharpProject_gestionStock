@@ -36,6 +36,7 @@
             this.lbProduitVendus = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lbDevise = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lbBenefices = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.lbClients = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.lbDevise = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSlide)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -84,7 +84,7 @@
             this.imgSlide.FillColor = System.Drawing.Color.Transparent;
             this.imgSlide.Image = global::csharpProject_gestionStock.Properties.Resources.vendu;
             this.imgSlide.ImageRotate = 0F;
-            this.imgSlide.Location = new System.Drawing.Point(181, 16);
+            this.imgSlide.Location = new System.Drawing.Point(186, 16);
             this.imgSlide.Name = "imgSlide";
             this.imgSlide.Size = new System.Drawing.Size(65, 46);
             this.imgSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,12 +95,12 @@
             // 
             this.lbProduitVendus.AutoSize = true;
             this.lbProduitVendus.BackColor = System.Drawing.Color.Transparent;
-            this.lbProduitVendus.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduitVendus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lbProduitVendus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbProduitVendus.Location = new System.Drawing.Point(4, 70);
             this.lbProduitVendus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProduitVendus.Name = "lbProduitVendus";
-            this.lbProduitVendus.Size = new System.Drawing.Size(71, 37);
+            this.lbProduitVendus.Size = new System.Drawing.Size(55, 30);
             this.lbProduitVendus.TabIndex = 8;
             this.lbProduitVendus.Text = "400";
             // 
@@ -108,12 +108,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(4, 27);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 25);
+            this.label3.Size = new System.Drawing.Size(189, 29);
             this.label3.TabIndex = 7;
             this.label3.Text = "Produits Vendus";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -133,6 +133,20 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(251, 139);
             this.guna2GradientPanel2.TabIndex = 9;
             // 
+            // lbDevise
+            // 
+            this.lbDevise.AutoSize = true;
+            this.lbDevise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.lbDevise.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDevise.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDevise.Location = new System.Drawing.Point(180, 113);
+            this.lbDevise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDevise.Name = "lbDevise";
+            this.lbDevise.Size = new System.Drawing.Size(91, 29);
+            this.lbDevise.TabIndex = 11;
+            this.lbDevise.Text = "(FCFA)";
+            this.lbDevise.Click += new System.EventHandler(this.lbDevise_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -150,12 +164,12 @@
             // 
             this.lbBenefices.AutoSize = true;
             this.lbBenefices.BackColor = System.Drawing.Color.Transparent;
-            this.lbBenefices.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBenefices.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lbBenefices.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbBenefices.Location = new System.Drawing.Point(4, 70);
             this.lbBenefices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBenefices.Name = "lbBenefices";
-            this.lbBenefices.Size = new System.Drawing.Size(71, 37);
+            this.lbBenefices.Size = new System.Drawing.Size(55, 30);
             this.lbBenefices.TabIndex = 8;
             this.lbBenefices.Text = "400";
             // 
@@ -163,12 +177,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(4, 27);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 25);
+            this.label7.Size = new System.Drawing.Size(173, 29);
             this.label7.TabIndex = 7;
             this.label7.Text = "Chiffre d\'affaire";
             // 
@@ -203,12 +217,12 @@
             // 
             this.lbClients.AutoSize = true;
             this.lbClients.BackColor = System.Drawing.Color.Transparent;
-            this.lbClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbClients.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lbClients.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbClients.Location = new System.Drawing.Point(2, 70);
             this.lbClients.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbClients.Name = "lbClients";
-            this.lbClients.Size = new System.Drawing.Size(71, 37);
+            this.lbClients.Size = new System.Drawing.Size(55, 30);
             this.lbClients.TabIndex = 8;
             this.lbClients.Text = "400";
             // 
@@ -216,12 +230,12 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(4, 27);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 25);
+            this.label9.Size = new System.Drawing.Size(87, 29);
             this.label9.TabIndex = 7;
             this.label9.Text = "Clients";
             // 
@@ -234,24 +248,10 @@
             this.cartesianChart1.TabIndex = 11;
             this.cartesianChart1.Text = "cartesianChart2";
             // 
-            // lbDevise
-            // 
-            this.lbDevise.AutoSize = true;
-            this.lbDevise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.lbDevise.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDevise.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbDevise.Location = new System.Drawing.Point(180, 113);
-            this.lbDevise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbDevise.Name = "lbDevise";
-            this.lbDevise.Size = new System.Drawing.Size(56, 18);
-            this.lbDevise.TabIndex = 11;
-            this.lbDevise.Text = "(FCFA)";
-            this.lbDevise.Click += new System.EventHandler(this.lbDevise_Click);
-            // 
             // UC_BilanGeneral
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.cartesianChart1);
             this.Controls.Add(this.guna2GradientPanel3);

@@ -90,7 +90,7 @@ namespace csharpProject_gestionStock
                 Prix_Vente = x.PrixUnitaire,
                 Qte_Minimale = x.QuantiteMinimale,
                 Qte_Critique = x.QuantiteMaximale,
-                Categorie = x.CodeCategorie
+                Categorie = db.Categorie.Where(c => c.CodeCategorie == x.CodeCategorie).FirstOrDefault().LibelleCategorie
             }).ToList();
 
 

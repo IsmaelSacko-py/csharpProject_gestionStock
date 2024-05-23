@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using csharpProject_gestionStock.Utils;
 
 namespace csharpProject_gestionStock
 {
@@ -53,7 +54,7 @@ namespace csharpProject_gestionStock
             string RegistreCommerce = "SN-DK-84-B-30";
 
 
-            Utilisateur user = db.Utilisateur.Where(x => x.IdentifiantUtilisateur == Form1.IdentifiantUtilisateur).FirstOrDefault();
+            Utilisateur user = db.Utilisateur.Where(x => x.IdentifiantUtilisateur == Session.Identifiant).FirstOrDefault();
             string Vendeur = user.Nom + user.Prenom;
 
             var liste = this.ListeFacture;

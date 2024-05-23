@@ -33,12 +33,40 @@ namespace csharpProject_gestionStock
                    Stock = db.Approvisionnement.Where(u => u.CodeProduit == group.Key).FirstOrDefault().QuantiteRestante,
                    Ventes = group.Sum(x => x.Quantite),
                    Montant = group.Sum(x => x.Total),
+                   Chiffre_Affaire = 0,
 
                })
                .OrderByDescending(x => x.Ventes)
                .ToList();
 
+            // Determine le chiffre d'affaire de chaque produit vendu
+            foreach(var bilan in ListeBilan)
+            {
+                bilan.Chiffre_Affaire = calculBeneficeProduit(bilan.Ref_Produit);
+            }
+
             dgBilanProduit.DataSource = ListeBilan;
+        }
+
+        /// <summary>
+        /// Determine le chiffre d'affaire d'un produit en particulier
+        /// </summary>
+        /// <param name="CodeProduit"> Le code du produit dont on souhaite determiner le chiffre d'affaire </param>
+        /// <returns>Le chiffre d'affaire</returns>
+        public double? calculBeneficeProduit(String CodeProduit)
+        {
+            var ventes = db.Facture.Where(p => p.CodeProduit == CodeProduit).ToList();
+            var PrixAchat = db.Produit.Where(p => p.CodeProduit == CodeProduit).FirstOrDefault().PrixAchat;
+            List<double?> benefices = new List<double?>();
+            foreach (var vente in ventes)
+            {
+                //var PrixAchat = produits.Where(p => p.CodeProduit == vente.CodeProduit).FirstOrDefault().PrixAchat;
+                var PrixAchatTotal = vente.Quantite * PrixAchat;
+                var benefice = vente.Total - PrixAchatTotal;
+                benefices.Add(benefice);
+            }
+
+            return benefices.Sum();
         }
 
         private void btnRecherche_Click(object sender, EventArgs e)

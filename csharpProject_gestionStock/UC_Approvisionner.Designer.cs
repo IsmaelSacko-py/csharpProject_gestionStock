@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.lblProduit = new System.Windows.Forms.Label();
@@ -65,13 +65,14 @@
             this.lblProduit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProduit.Location = new System.Drawing.Point(206, 19);
             this.lblProduit.Name = "lblProduit";
-            this.lblProduit.Size = new System.Drawing.Size(60, 24);
+            this.lblProduit.Size = new System.Drawing.Size(93, 33);
             this.lblProduit.TabIndex = 0;
             this.lblProduit.Text = "label1";
             this.lblProduit.Click += new System.EventHandler(this.lblProduit_Click);
             // 
             // txtQuantite
             // 
+            this.txtQuantite.BorderRadius = 5;
             this.txtQuantite.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtQuantite.DefaultText = "";
             this.txtQuantite.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -80,8 +81,10 @@
             this.txtQuantite.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtQuantite.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuantite.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtQuantite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtQuantite.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuantite.Location = new System.Drawing.Point(209, 101);
+            this.txtQuantite.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtQuantite.Name = "txtQuantite";
             this.txtQuantite.PasswordChar = '\0';
             this.txtQuantite.PlaceholderText = "";
@@ -92,16 +95,17 @@
             // 
             // txtDatePeremption
             // 
+            this.txtDatePeremption.BorderRadius = 5;
             this.txtDatePeremption.Checked = true;
             this.txtDatePeremption.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDatePeremption.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDatePeremption.Location = new System.Drawing.Point(607, 101);
             this.txtDatePeremption.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.txtDatePeremption.MinDate = new System.DateTime(2024, 2, 17, 14, 45, 40, 0);
+            this.txtDatePeremption.MinDate = new System.DateTime(2024, 5, 13, 0, 0, 0, 0);
             this.txtDatePeremption.Name = "txtDatePeremption";
             this.txtDatePeremption.Size = new System.Drawing.Size(242, 36);
             this.txtDatePeremption.TabIndex = 2;
-            this.txtDatePeremption.Value = new System.DateTime(2024, 2, 17, 14, 45, 40, 0);
+            this.txtDatePeremption.Value = new System.DateTime(2024, 5, 13, 0, 0, 0, 0);
             this.txtDatePeremption.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
             // btnAjouter
@@ -114,6 +118,7 @@
             this.btnAjouter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnAjouter.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(98)))), ((int)(((byte)(174)))));
             this.btnAjouter.Location = new System.Drawing.Point(307, 199);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(116, 34);
@@ -128,9 +133,10 @@
             this.btnModifier.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnModifier.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnModifier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnModifier.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnModifier.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
             this.btnModifier.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnModifier.ForeColor = System.Drawing.Color.White;
+            this.btnModifier.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(172)))), ((int)(((byte)(13)))));
             this.btnModifier.Location = new System.Drawing.Point(466, 199);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(116, 34);
@@ -145,9 +151,10 @@
             this.btnSupprimer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSupprimer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSupprimer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSupprimer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
+            this.btnSupprimer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.btnSupprimer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSupprimer.ForeColor = System.Drawing.Color.White;
+            this.btnSupprimer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(67)))), ((int)(((byte)(53)))));
             this.btnSupprimer.Location = new System.Drawing.Point(625, 199);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(116, 34);
@@ -160,7 +167,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(209, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 18);
+            this.label1.Size = new System.Drawing.Size(103, 29);
             this.label1.TabIndex = 7;
             this.label1.Text = "Quantité";
             // 
@@ -169,37 +176,38 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(604, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 18);
+            this.label2.Size = new System.Drawing.Size(226, 29);
             this.label2.TabIndex = 8;
             this.label2.Text = "Date de peremption";
             // 
             // dgApprovisionnement
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgApprovisionnement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgApprovisionnement.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgApprovisionnement.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgApprovisionnement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgApprovisionnement.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgApprovisionnement.ColumnHeadersHeight = 20;
             this.dgApprovisionnement.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgApprovisionnement.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgApprovisionnement.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgApprovisionnement.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgApprovisionnement.Location = new System.Drawing.Point(118, 257);
             this.dgApprovisionnement.Name = "dgApprovisionnement";
             this.dgApprovisionnement.RowHeadersVisible = false;
+            this.dgApprovisionnement.RowHeadersWidth = 62;
             this.dgApprovisionnement.Size = new System.Drawing.Size(816, 322);
             this.dgApprovisionnement.TabIndex = 9;
             this.dgApprovisionnement.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -240,8 +248,8 @@
             // 
             // UC_Approvisionner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.dgApprovisionnement);
             this.Controls.Add(this.label2);

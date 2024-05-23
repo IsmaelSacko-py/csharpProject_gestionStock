@@ -175,7 +175,7 @@ namespace csharpProject_gestionStock
             facture.Total = facture.Quantite * facture.Prix;
 
             montantTotal += facture.Total;
-            lblMontantTotal.Text = $"<p>Total : <strong>{montantTotal}</strong> CFA</p>";
+            lblMontantTotal.Text = $"<p>Total : <strong>{string.Format("{0:n}", montantTotal)}</strong> FCFA</p>";
 
             /*db.Facture.Add(facture);
             db.SaveChanges();*/
@@ -358,7 +358,7 @@ namespace csharpProject_gestionStock
                 facture.Quantite = fact.Quantite;
                 facture.Prix = fact.Prix;
                 facture.Total = fact.Total;
-                facture.IdentifiantUtilisateur = Form1.IdentifiantUtilisateur;
+                facture.IdentifiantUtilisateur = Session.Identifiant;
                 facture.dateVente = DateTime.Now;
 
                 db.Facture.Add(facture);
@@ -380,6 +380,14 @@ namespace csharpProject_gestionStock
         {
         }
 
+        private void txtCode_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtPrix_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

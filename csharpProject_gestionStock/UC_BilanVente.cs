@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using csharpProject_gestionStock.Model;
+using csharpProject_gestionStock.Utils;
 using Microsoft.VisualBasic.ApplicationServices;
 
 namespace csharpProject_gestionStock
@@ -24,7 +25,7 @@ namespace csharpProject_gestionStock
 
         private void UC_BilanVente_Load(object sender, EventArgs e)
         {
-            string profil = db.Utilisateur.Where(x => x.IdentifiantUtilisateur == Form1.IdentifiantUtilisateur).FirstOrDefault().CodeProfil;
+            string profil = db.Utilisateur.Where(x => x.IdentifiantUtilisateur == Session.Identifiant).FirstOrDefault().CodeProfil;
             if(profil == "GEST")
             {
                // dgBilanVente.DataSource = db.Facture.ToList();
@@ -50,7 +51,7 @@ namespace csharpProject_gestionStock
             }
             else
             {
-                ListeBilanVente = db.Facture.Where(x => x.IdentifiantUtilisateur == Form1.IdentifiantUtilisateur)
+                ListeBilanVente = db.Facture.Where(x => x.IdentifiantUtilisateur == Session.Identifiant)
                 .GroupBy(user => new {user.CodeProduit, user.IdentifiantUtilisateur})
                 .Select(x => new BilanVend
                 {

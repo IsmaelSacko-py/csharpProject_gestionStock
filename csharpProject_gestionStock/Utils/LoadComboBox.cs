@@ -17,7 +17,7 @@ namespace csharpProject_gestionStock.Utils
             LaList.Add(new ListSelectedViewModel()
             {
                 Value = null,
-                Text = "-------------------"
+                Text = "Selectionner..."
 
             });
 
@@ -40,7 +40,7 @@ namespace csharpProject_gestionStock.Utils
             LaList.Add(new ListSelectedViewModel()
             {
                 Value = null,
-                Text = "-------------------"
+                Text = "Selectionner..."
 
             });
 

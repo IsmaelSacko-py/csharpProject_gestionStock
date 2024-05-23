@@ -52,13 +52,14 @@
             this.label2.Location = new System.Drawing.Point(260, 41);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 18);
+            this.label2.Size = new System.Drawing.Size(87, 29);
             this.label2.TabIndex = 29;
             this.label2.Text = "Ventes";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtVentes
             // 
+            this.txtVentes.BorderRadius = 5;
             this.txtVentes.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVentes.DefaultText = "";
             this.txtVentes.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -109,6 +110,7 @@
             this.dgBilanVente.Name = "dgBilanVente";
             this.dgBilanVente.ReadOnly = true;
             this.dgBilanVente.RowHeadersVisible = false;
+            this.dgBilanVente.RowHeadersWidth = 62;
             this.dgBilanVente.Size = new System.Drawing.Size(964, 351);
             this.dgBilanVente.TabIndex = 27;
             this.dgBilanVente.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -144,6 +146,7 @@
             this.btnRecherche.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(212)))));
             this.btnRecherche.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRecherche.ForeColor = System.Drawing.Color.White;
+            this.btnRecherche.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(98)))), ((int)(((byte)(174)))));
             this.btnRecherche.Location = new System.Drawing.Point(882, 115);
             this.btnRecherche.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecherche.Name = "btnRecherche";
@@ -159,13 +162,14 @@
             this.label1.Location = new System.Drawing.Point(45, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.Size = new System.Drawing.Size(116, 29);
             this.label1.TabIndex = 25;
             this.label1.Text = "Identifiant";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtIdentifiant
             // 
+            this.txtIdentifiant.BorderRadius = 5;
             this.txtIdentifiant.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtIdentifiant.DefaultText = "";
             this.txtIdentifiant.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -198,13 +202,14 @@
             this.label3.Location = new System.Drawing.Point(478, 41);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 18);
+            this.label3.Size = new System.Drawing.Size(68, 29);
             this.label3.TabIndex = 34;
             this.label3.Text = "Total";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtTotal
             // 
+            this.txtTotal.BorderRadius = 5;
             this.txtTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTotal.DefaultText = "";
             this.txtTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -231,7 +236,7 @@
             // 
             // UC_BilanVente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.label3);
@@ -245,7 +250,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_BilanVente";
-            this.Size = new System.Drawing.Size(1060, 662);
+            this.Size = new System.Drawing.Size(1060, 676);
             this.Load += new System.EventHandler(this.UC_BilanVente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgBilanVente)).EndInit();
             this.ResumeLayout(false);

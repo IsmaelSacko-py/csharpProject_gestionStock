@@ -50,7 +50,7 @@ namespace csharpProject_gestionStock
             cartesianChart1.Series.Clear();
             SeriesCollection series = new SeriesCollection();
             
-            
+            // Récupère les ventes des trois dernières années
             var dates = db.Facture
                         .Select(x => x.dateVente.Value.Year)
                         .Distinct()
@@ -87,12 +87,12 @@ namespace csharpProject_gestionStock
 
             lbClients.Text = db.Facture.Select(x => x.TelephoneClient).Distinct().Count().ToString();
             lbProduitVendus.Text = db.Facture.Select(x => x.Quantite).Sum().ToString();
-            lbBenefices.Text = calculBenefice().ToString();
+            lbBenefices.Text = string.Format("{0:n}", calculBeneficeGeneral());
             lbDevise.Text = "(FCFA)";
 
         }
 
-        public double? calculBenefice()
+        public double? calculBeneficeGeneral()
         {
             var ventes = db.Facture.ToList();
             var produits = db.Produit.ToList();

@@ -14,7 +14,7 @@ namespace csharpProject_gestionStock.Utils
        public void SendMail(string from, string to, string subject, string body)
         {
             string fromMail = from;
-            string fromPassword = "znmw ekrx lgrg vrhe";
+            string fromPassword = "lsvd itvs kvwg lyor";
 
 
             try

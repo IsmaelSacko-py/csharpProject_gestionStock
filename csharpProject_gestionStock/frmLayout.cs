@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using csharpProject_gestionStock.Utils;
+using Guna.UI2.WinForms;
 using Microsoft.VisualBasic.Devices;
 using System;
 using System.Collections;
@@ -16,8 +17,8 @@ namespace csharpProject_gestionStock
     public partial class frmLayout : Form
     {
 
-        public string profil;
-        public int id;
+        /*public string profil;
+        public int id;*/
         public frmLayout()
         {
             this.IsMdiContainer = true;
@@ -46,22 +47,9 @@ namespace csharpProject_gestionStock
             }
         }
 
-        private void formulaireBleuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fermer();
-            frmBleu formBleu = new frmBleu();
-            formBleu.MdiParent = this;
-            formBleu.Show();
-            formBleu.WindowState = FormWindowState.Maximized;
-        }
+        
 
-        private void formulaireVertToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fermer();
-            frmVert formVert = new frmVert {MdiParent = this};
-            formVert.Show();
-            formVert.WindowState = FormWindowState.Maximized;
-        }
+
 
         private void frmLayout_Load(object sender, EventArgs e) 
         {
@@ -69,7 +57,7 @@ namespace csharpProject_gestionStock
             this.Width = myComputer.Screen.Bounds.Width;
             this.Height = myComputer.Screen.Bounds.Height;
             this.Location = new Point(0, 0);*/
-            bool Visibility = (profil == "VEND")? false : true;
+            bool Visibility = Session.Profil != "VEND";
 
 
             btnCategorie.Visible = Visibility;
@@ -97,7 +85,7 @@ namespace csharpProject_gestionStock
                 AddUserControl(uc);
             }
 
-            lblIdentifiantUtilisateur.Text = Form1.IdentifiantUtilisateur;
+            //lblIdentifiantUtilisateur.Text = Session.Identifiant;
 
             /* formulaireToolStripMenuItem.Visible = Visibility;
              sécuritéToolStripMenuItem.Visible = Visibility;*/
@@ -150,7 +138,7 @@ namespace csharpProject_gestionStock
         private void moveImageBox(object sender)
         {
             Guna2Button button = (Guna2Button)sender;
-            imgSlide.Location = new Point(button.Location.X + 118, button.Location.Y - 30);
+            imgSlide.Location = new Point(button.Location.X + 122, button.Location.Y - 30);
             imgSlide.SendToBack();
         }
 
@@ -160,7 +148,7 @@ namespace csharpProject_gestionStock
             uc.Dock = DockStyle.Fill;
             uc.BringToFront();
             plContainer.Controls.Add(uc);
-            btnProduit.Text = "Produit";
+            btnProduit.Text = "Produits";
         }
 
         private void guna2Button1_CheckedChanged(object sender, EventArgs e)
@@ -215,6 +203,11 @@ namespace csharpProject_gestionStock
         {
             UC_BilanVenteGen uc = new UC_BilanVenteGen();
             AddUserControl(uc);
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

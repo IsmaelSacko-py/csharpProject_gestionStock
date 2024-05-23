@@ -46,9 +46,10 @@
             this.plNavBar.Controls.Add(this.btnBilanGeneral);
             this.plNavBar.Controls.Add(this.btnVendeurs);
             this.plNavBar.Controls.Add(this.btnProduits);
-            this.plNavBar.Location = new System.Drawing.Point(-24, 19);
+            this.plNavBar.Location = new System.Drawing.Point(-36, 29);
+            this.plNavBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.plNavBar.Name = "plNavBar";
-            this.plNavBar.Size = new System.Drawing.Size(455, 29);
+            this.plNavBar.Size = new System.Drawing.Size(682, 45);
             this.plNavBar.TabIndex = 0;
             // 
             // btnBilanGeneral
@@ -67,9 +68,10 @@
             this.btnBilanGeneral.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBilanGeneral.ForeColor = System.Drawing.Color.White;
             this.btnBilanGeneral.HoverState.CustomBorderColor = System.Drawing.Color.Lavender;
-            this.btnBilanGeneral.Location = new System.Drawing.Point(72, 0);
+            this.btnBilanGeneral.Location = new System.Drawing.Point(108, 0);
+            this.btnBilanGeneral.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBilanGeneral.Name = "btnBilanGeneral";
-            this.btnBilanGeneral.Size = new System.Drawing.Size(117, 26);
+            this.btnBilanGeneral.Size = new System.Drawing.Size(176, 40);
             this.btnBilanGeneral.TabIndex = 4;
             this.btnBilanGeneral.Text = "BILAN GENERAL";
             this.btnBilanGeneral.Click += new System.EventHandler(this.btnBilanGeneral_Click);
@@ -89,9 +91,10 @@
             this.btnVendeurs.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnVendeurs.ForeColor = System.Drawing.Color.White;
             this.btnVendeurs.HoverState.CustomBorderColor = System.Drawing.Color.Lavender;
-            this.btnVendeurs.Location = new System.Drawing.Point(195, 0);
+            this.btnVendeurs.Location = new System.Drawing.Point(292, 0);
+            this.btnVendeurs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVendeurs.Name = "btnVendeurs";
-            this.btnVendeurs.Size = new System.Drawing.Size(117, 26);
+            this.btnVendeurs.Size = new System.Drawing.Size(176, 40);
             this.btnVendeurs.TabIndex = 3;
             this.btnVendeurs.Text = "VENDEURS";
             this.btnVendeurs.Click += new System.EventHandler(this.btnVendeurs_Click);
@@ -112,9 +115,10 @@
             this.btnProduits.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnProduits.ForeColor = System.Drawing.Color.White;
             this.btnProduits.HoverState.CustomBorderColor = System.Drawing.Color.Lavender;
-            this.btnProduits.Location = new System.Drawing.Point(318, 0);
+            this.btnProduits.Location = new System.Drawing.Point(477, 0);
+            this.btnProduits.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProduits.Name = "btnProduits";
-            this.btnProduits.Size = new System.Drawing.Size(117, 26);
+            this.btnProduits.Size = new System.Drawing.Size(176, 40);
             this.btnProduits.TabIndex = 2;
             this.btnProduits.Text = "PRODUITS";
             this.btnProduits.Click += new System.EventHandler(this.btnProduits_Click);
@@ -132,9 +136,10 @@
             // 
             // plBilanContainer
             // 
-            this.plBilanContainer.Location = new System.Drawing.Point(0, 49);
+            this.plBilanContainer.Location = new System.Drawing.Point(0, 75);
+            this.plBilanContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.plBilanContainer.Name = "plBilanContainer";
-            this.plBilanContainer.Size = new System.Drawing.Size(1060, 662);
+            this.plBilanContainer.Size = new System.Drawing.Size(1060, 676);
             this.plBilanContainer.TabIndex = 1;
             // 
             // guna2Elipse2
@@ -144,11 +149,12 @@
             // 
             // UC_BilanVenteGen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.plBilanContainer);
             this.Controls.Add(this.plNavBar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UC_BilanVenteGen";
             this.Size = new System.Drawing.Size(1060, 676);
             this.Load += new System.EventHandler(this.UC_BilanVenteGen_Load);
