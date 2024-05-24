@@ -9,16 +9,18 @@ Cette application permet la gestion du stock d’un magasin qui va de la gestion
 </div>
 
 ## Présentation de l'application
-<img align="left" width="30%" src="AppOverview/PageConnexion.png">
->#### Partie Gestionnaire
-<img align="left" width="30%" src="AppOverview/PageProduits.png">
-<img align="left" width="30%"  src="AppOverview/PageVendeurs.png">
-<img align="left" width="30%"  src="AppOverview/PageBilanGeneral.png">
-<img align="left" width="30%"  src="AppOverview/PageBilanVendeurs.png">
+<div align="center"><img src="AppOverview/PageConnexion.png"></div>
 
->#### Vendeur
-<img align="left" width="30%" src="AppOverview/BilanVentes.png">
-<img align="left" width="30%" src="AppOverview/PageVendre.png">
+>### Partie Gestionnaire
+<img width="" src="AppOverview/PageProduits.png">
+<img width=""  src="AppOverview/PageVendeurs.png">
+<img width=""  src="AppOverview/PageBilanGeneral.png">
+<img width=""  src="AppOverview/PageBilanVendeurs.png">
+
+>### Partie Vendeur
+<img width="" src="AppOverview/PageVendre.png">
+<img width="" src="AppOverview/BilanVentes.png">
+
 
 
 
