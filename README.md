@@ -9,7 +9,9 @@ Cette application permet la gestion du stock d’un magasin qui va de la gestion
 </div>
 
 ## Présentation de l'application
-<div align="center"><img src="AppOverview/PageConnexion.png"></div>
+<div align="center" >
+  <img src="AppOverview/PageConnexion.png" >
+</div>
 
 >### Partie Gestionnaire
 <img width="" src="AppOverview/PageProduits.png">
